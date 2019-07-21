@@ -5,6 +5,10 @@ import (
 	"fmt"
 )
 
+var (
+	MatchesURLGroupPhase = "https://www.fifa.com/worldcup/matches/?#groupphase"
+)
+
 func init() {
 	viper.SetConfigName("settings")
 	viper.AddConfigPath("E:/gopath/src/github.com/liweiyuan/go-learn/infra/config")
