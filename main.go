@@ -7,6 +7,10 @@ import (
 	"github.com/liweiyuan/go-learn/infra/download"
 	"fmt"
 	"github.com/liweiyuan/go-learn/domain"
+
+	"github.com/liweiyuan/go-learn/ui"
+
+	_ "github.com/liweiyuan/go-learn/docs"
 )
 
 func main() {
@@ -15,7 +19,10 @@ func main() {
 	StartTables()
 
 	// 2. push data into db
-	PushDataIntoDB()
+	//PushDataIntoDB()
+
+	//3. start server
+	api_server.New().Start()
 }
 
 func StartTables() {
